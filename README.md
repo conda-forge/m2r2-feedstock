@@ -5,11 +5,9 @@ Home: https://github.com/crossnox/m2r2
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/m2r2-feedstock/blob/master/LICENSE.txt)
 
 Summary: Markdown and reStructuredText in a single file.
-
-
 
 Current build status
 ====================

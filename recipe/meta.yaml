@@ -1,5 +1,5 @@
 {% set name = "m2r2" %}
-{% set version = "0.2.5" %}
+{% set version = "0.2.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9da08226c7ff0a60c4fce62ad5b60c761d7fd6e8c20bd2b7f9c246bce4dc0685
+  sha256: 598be13b9bc20afbeaf47a09eb3c107e2de9c83982747ebb4143f29bbf653fa1
 
 build:
   number: 0

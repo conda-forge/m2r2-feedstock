@@ -11,7 +11,7 @@ source:
   sha256: 6bf2d74e4cd15ce8a795999326cc7a4924af69ac1d114cac8064c1599ab11892
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - m2r2 = m2r2:main
@@ -23,7 +23,7 @@ requirements:
     - python >=3.6
   run:
     - docutils
-    - mistune
+    - mistune <2
     - python >=3.6
 
 test:
@@ -44,3 +44,4 @@ about:
 extra:
   recipe-maintainers:
     - basnijholt
+    - xylar

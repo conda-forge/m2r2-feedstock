@@ -1,14 +1,13 @@
 {% set name = "m2r2" %}
-{% set version = "0.3.3" %}
-
+{% set version = "0.3.3.post2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f9b6e9efbc2b6987dbd43d2fd15a6d115ba837d8158ae73295542635b4086e75
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/m2r2-{{ version }}.tar.gz
+  sha256: e62bcb0e74b3ce19cda0737a0556b04cf4a43b785072fcef474558f2c1482ca8
 
 build:
   number: 0
@@ -19,12 +18,12 @@ build:
 
 requirements:
   host:
+    - python >=3.7
     - pip
-    - python >=3.6
   run:
-    - docutils
-    - mistune 0.8.4
-    - python >=3.6
+    - python >=3.7
+    - mistune ==0.8.4
+    - docutils >=0.19
 
 test:
   imports:

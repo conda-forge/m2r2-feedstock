@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/m2r2-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/m2r2-{{ version }}.tar.gz
   sha256: e62bcb0e74b3ce19cda0737a0556b04cf4a43b785072fcef474558f2c1482ca8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - m2r2 = m2r2:main
@@ -18,10 +18,10 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - mistune ==0.8.4
     - docutils >=0.19
 
@@ -33,6 +33,7 @@ test:
     - m2r2 --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/crossnox/m2r2

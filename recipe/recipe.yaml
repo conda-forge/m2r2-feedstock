@@ -24,9 +24,10 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
+    - hatchling
   run:
     - python >=${{ python_min }}
-    - mistune ==0.8.4
+    - mistune >=3.0,<3.3
     - docutils >=0.19
 
 tests:
@@ -34,7 +35,9 @@ tests:
       imports:
         - m2r2
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
   - requirements:
       run:
         - pip

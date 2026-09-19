@@ -18,7 +18,7 @@ build:
   script: ${{ PYTHON }} -m pip install . -vv
   python:
     entry_points:
-      - m2r2 = m2r2:main
+      - m2r2 = m2r2.cli.m2r2:main
 
 requirements:
   host:

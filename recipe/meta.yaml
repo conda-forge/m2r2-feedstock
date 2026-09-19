@@ -1,13 +1,13 @@
 {% set name = "m2r2" %}
-{% set version = "0.3.4" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/m2r2-{{ version }}.tar.gz
-  sha256: e278f5f337e9aa7b2080fcc3e94b051bda9615b02e36c6fb3f23ff019872f043
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/m2r2-{{ version }}.tar.gz
+  sha256: 998534cc1b6d0542483c976a5387f2d7d2223361fb637ca1d1d733571d5e6db0
 
 build:
   number: 0

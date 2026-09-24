@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: m2r2
-  version: "1.1.0"
+  version: "2.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/m2r2-${{ version }}.tar.gz
-  sha256: 998534cc1b6d0542483c976a5387f2d7d2223361fb637ca1d1d733571d5e6db0
+  sha256: f6756b22b4ba4ec0b5e9d8b643503ef896e1c5688b577f77f471dca6cd87e10d
 
 build:
   number: 0

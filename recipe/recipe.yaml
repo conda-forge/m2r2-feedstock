@@ -27,7 +27,7 @@ requirements:
     - hatchling
   run:
     - python >=${{ python_min }}
-    - mistune >=3.0,<3.3
+    - mistune >=3.3,<3.4
     - docutils >=0.19
 
 tests:
